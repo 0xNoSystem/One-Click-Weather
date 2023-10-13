@@ -1,4 +1,14 @@
-const apiKey = "63c9b1ad4afab9449b2e6eb8e54bad65";
+let apiKey;
+fetch('/api-key')
+  .then((res)=> res.json())
+  .then((data)=>{
+    apiKey = data.apiKey;
+    console.log(apiKey);
+  })
+  .catch((error)=>{
+    console.log(error);
+  });
+
 const C = document.getElementById('country');
 const F = document.getElementById('flag');
 
