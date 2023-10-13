@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Map Click Coordinates</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    
+    
+    <h1>World Weather Atlas<footer>© 2023 0xNoSystem</footer></h1>
+        <div id="darkmode-container">
+            <p>Mode</p>
+            <input type="checkbox" id="darkmode-toggle"/>
+            <Label for="darkmode-toggle"></Label>
+        </div>
+    
+
+    <h2>Click on any location to get Live Weather Info</h2>
+    
+<div class="container-fluid" >
+
+    <div class="row">
+
+        <div class="live-info-container col-md-6">
+            <h2 id="live-header">LIVE INFO</h2>
+            <ul>
+                <li><b>Country : </b><span id="country"></span><span id="flag"></span></li>
+                <li><b>City : </b><span id="city"></span></li>
+                <li><b>Temperature : </b><span id="temp"></span></li>
+                <li><b>Humidity : </b><span id="humidity"></span></li>
+                <li><b>Status : </b><span id="disc"></span></li>
+            </ul>
+        </div>
+        
+        <div class="col-md-6" id="map-container">
+            <div id='cool-border'>
+                <img src="images/landofgod.jpg" alt="World Map" id="world-map"/>
+            </div>
+            <div id="coordinates">
+                Lat: <span id="latitude">~ /</span>
+                Lon: <span id="longitude">~</span>
+            </div>
+    
+        </div>
+        
+       
+
+    </div>
+
+</div>
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
