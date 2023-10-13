@@ -23,6 +23,6 @@ app.get('/api-key', (req,res)=>{
 
 
 
-app.listen(port, (req,res)=>{
+app.listen(process.env.PORT || 3000, (req,res)=>{
     console.log('Listening on port '+ port);
 })
