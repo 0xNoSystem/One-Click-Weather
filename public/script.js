@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function fetchWeather(lat, long){
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`)
     .then(res => {
       return res.json(); // Return the JSON-parsed data
     })
