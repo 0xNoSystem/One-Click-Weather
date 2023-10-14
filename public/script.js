@@ -1,5 +1,5 @@
-var apiKey;
-fetch('/api-key')
+
+fetch('https://warm-peak-25203-db38ee96905f.herokuapp.com//api-key')
   .then((res)=> res.json())
   .then((data)=>{
     apiKey = data.apiKey;
