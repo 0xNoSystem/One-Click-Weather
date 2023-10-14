@@ -1,4 +1,4 @@
-let apiKey;
+var apiKey;
 fetch('/api-key')
   .then((res)=> res.json())
   .then((data)=>{
