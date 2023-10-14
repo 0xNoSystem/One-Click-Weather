@@ -16,7 +16,7 @@ app.get('/', (req,res)=>{
     res.sendFile(__dirname + '/index.html');
 });
 
-app.get('/api-key', (req,res)=>{
+app.get('/63712b265de711c784cc654d268aa0f4', (req,res)=>{
     const apiKey = process.env.apiKey;
     res.json({apiKey});
 })
