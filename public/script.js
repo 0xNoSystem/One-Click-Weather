@@ -3,7 +3,7 @@ fetch('/63712b265de711c784cc654d268aa0f4')
   .then((res)=> res.json())
   .then((data)=>{
     apiKey = data.apiKey;
-    console.log(apiKey);
+    
   })
   .catch((error)=>{
     console.log(error);
@@ -52,7 +52,8 @@ function fetchWeather(lat, long){
       return res.json(); // Return the JSON-parsed data
     })
     .then(data => {
-      console.log(data); // Log the parsed data
+      
+      // Log the parsed data
 
       
       const countryName = data.city.country;
@@ -119,9 +120,6 @@ function fetchCountry(countryCode){
     return res.json()
   })
   .then(data => {
-    console.log(data[0]);
-
-    
     
     const clickedOnCountry = data[0].name.common;
 
