@@ -105,8 +105,9 @@ worldMap.addEventListener("click", function(event){
   }
   const pinImage = document.getElementById("pin"); // Custom pin image
   
-  pinImage.style.left = event.x -16 + "px";
-  pinImage.style.top = event.y -43 + "px";
+  pinImage.style.left = event.clientX + window.scrollX-16 + "px";
+  pinImage.style.top = event.clientY + window.scrollY-43 + "px";
+  console.log(event);
   
 
 })
