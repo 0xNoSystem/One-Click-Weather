@@ -95,22 +95,7 @@ function fetchWeather(lat, long){
 };
 
 const worldMap = document.getElementById("world-map");
-worldMap.addEventListener("click", function(event){
-  const newPin = '<img id="pin" src="images/map-pin.png" height="50px" width="50px">';
 
-  if (document.body.firstChild === document.querySelector('#pin')){
-    const x = 1;
-  }else{
-  document.querySelector('body').insertAdjacentHTML('afterbegin',newPin)
-  }
-  const pinImage = document.getElementById("pin"); // Custom pin image
-  
-  pinImage.style.left = event.clientX + window.scrollX-16 + "px";
-  pinImage.style.top = event.clientY + window.scrollY-43 + "px";
-  console.log(event);
-  
-
-})
 
 
 
@@ -164,3 +149,24 @@ darkmodeButton.addEventListener("click",function(event){
   document.querySelector('.live-info-container').classList.toggle('live-info-container-darkmode')
 
 });
+worldMap.addEventListener("click", function(event){
+  const newPin = '<img id="pin" src="images/map-pin.png" height="50px" width="50px">';
+
+  if (document.getElementById('cool-border').lastChild === document.querySelector('#pin')){
+    const x = 1;
+  }else{
+    const tempDiv = document.createElement('div');
+    tempDiv.innerHTML = newPin;
+    document.getElementById('cool-border').appendChild(tempDiv.firstChild);
+  }
+  const pinImage = document.getElementById("pin"); // Custom pin image
+  
+  const rect = worldMap.getBoundingClientRect();
+  
+
+  pinImage.style.left = (event.clientX + -16 - rect.left)*100/(worldMap.width) + "%";
+  pinImage.style.top = (event.clientY + -43  - rect.top)*100/(worldMap.height) + "%";
+  
+  
+
+})

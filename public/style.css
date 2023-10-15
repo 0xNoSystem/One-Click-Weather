@@ -24,8 +24,7 @@ body{
     z-index: 0;
     position: absolute;
     display: block;
-    pointer-events: none;
-    
+    pointer-events: none;  
 }
 
 h1{
@@ -72,6 +71,7 @@ h2{
 
 
 #cool-border{
+    position: relative;
     width: fit-content;
     height: fit-content;
     border-radius: 15px;
