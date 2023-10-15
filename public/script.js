@@ -148,6 +148,8 @@ darkmodeButton.addEventListener("click",function(event){
 
   document.querySelector('.live-info-container').classList.toggle('live-info-container-darkmode')
 
+  document.querySelector('h2').classList.toggle('darkmode-h2')
+
 });
 worldMap.addEventListener("click", function(event){
   const newPin = '<img id="pin" src="images/map-pin.png" height="50px" width="50px">';

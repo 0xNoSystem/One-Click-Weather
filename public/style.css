@@ -40,8 +40,8 @@ h2{
     text-align: center;
     margin-bottom: 33px;
     padding: 5px;
-    color: darkslategrey;
-    opacity: 80%;
+    color: rgb(35, 147, 147);
+    opacity: 60%;
     background-color: aliceblue;
 }
 
@@ -192,6 +192,12 @@ label {
     width: 100%;
 }
 
+.darkmode-h2{
+    color: green;
+}
+
+
+
 
 
 
@@ -207,10 +213,9 @@ label {
     #world-map{
         height: 197.8px;
         width: 394.9px;
-        margin-left: 1px;
+        
         
     }
-
 
     #pin{
         z-index: 0;
@@ -233,16 +238,22 @@ label {
         display: flex;
         flex-direction:row;
         position: absolute;
-        top: 52px;
-        left: 68%;
+        top: 50px;
+        left: 73%;
 
       }
 
 
     #darkmode-container p{
-        color: orange ;
+        color: rgb(129, 124, 124) ;
+        opacity: 60%;
     }
     
+    #map-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
 
