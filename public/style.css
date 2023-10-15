@@ -186,7 +186,11 @@ label {
     opacity: 100%;
 }
 
-
+#header-container{
+    position: relative;
+    background-color: orange;
+    width: 100%;
+}
 
 
 
@@ -201,9 +205,9 @@ label {
         justify-content: center;
     }
     #world-map{
-        height: 219.75px;
-        width: 438.75px;
-        
+        height: 197.8px;
+        width: 394.9px;
+        margin-left: 1px;
         
     }
 
@@ -223,6 +227,20 @@ label {
         margin-bottom: 3px;
         
     
+    }
+
+    #darkmode-container{
+        display: flex;
+        flex-direction:row;
+        position: absolute;
+        top: 52px;
+        left: 68%;
+
+      }
+
+
+    #darkmode-container p{
+        color: orange ;
     }
     
 
